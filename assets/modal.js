@@ -8,10 +8,8 @@
 
 function CreateIssue() {
 
-    console.log("413123123131231");
-
-    var url = "https://api.mi4biz.net/services/IssueService/478/Issue.json/1";
-    var header = { 'Content-Type': 'application/json', 'Authorization': 'Basic YWRtaW5AZHJkLmNvbTE6MTIzNDU2QWEt', 'Accept': 'text/html,application/xhtml+json,application/json;q=0.9,*/*;q=0.8' };
+    var url = "http://testapirack.mi4biz.com/services/IssueService/478/Issue.json/1";
+    var header = { 'Content-Type': 'application/json', 'authorization': 'Basic YWRtaW5AZHJkLmNvbTE6MTIzNDU2QWEt', 'accept': 'application/json' };
 
     var request = '{ \
                     "Category": { \
@@ -21,7 +19,7 @@ function CreateIssue() {
                         "ContactMethodID": "6887" \
                     }, \
                     "Customer": { \
-                        "CustomerID": "C1094076" \
+                        "CustomerID": "1094076" \
                     }, \
                     "IssueDescription": "hoot suite test bildirim", \
                         "IssueType": { \
@@ -35,6 +33,7 @@ function CreateIssue() {
                     } \
                 }';
 
+    console.log(request);
 
     $.ajax({
         type: "POST",
@@ -43,15 +42,14 @@ function CreateIssue() {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         data: request,
-        async: false,
-        cache: false,
         success: function (response) {
 
             console.log("Success: " + response);
         },
         error: function (e) {
 
-            console.log("Error: " + e);
+            console.log("Status: " + e.status);
+            console.log("Error: " + e.statusText);
         }
     });
 }
