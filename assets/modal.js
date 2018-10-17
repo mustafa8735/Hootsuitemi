@@ -8,7 +8,7 @@
 
 function CreateIssue() {
 
-    var url = "http://testapirack.mi4biz.com/services/IssueService/478/Issue.json/1";
+    var url = "https://testapirack.mi4biz.com/services/IssueService/478/Issue.json/1";
     var header = { 'Content-Type': 'application/json', 'authorization': 'Basic YWRtaW5AZHJkLmNvbTE6MTIzNDU2QWEt', 'accept': 'application/json' };
 
     var request = '{ \
@@ -21,7 +21,7 @@ function CreateIssue() {
                     "Customer": { \
                         "CustomerID": "1094076" \
                     }, \
-                    "IssueDescription": "hoot suite test bildirim", \
+                    "IssueDescription": "hoot suite test bildirim 61", \
                         "IssueType": { \
                         "IssueTypeID": "1181" \
                     }, \
