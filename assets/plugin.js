@@ -22,7 +22,7 @@ function sendToAppHandler(data) {
     window.localStorage.jsonData = JSON.stringify(data);
   }
   // open a custom modal, where the data will be read and displayed on the dashboard
-  hsp.showCustomPopup(window.location.origin + '/modal', 'Mi4Biz Bildirim Oluşturma');
+  hsp.showCustomPopup(window.location.origin + '/modal', '');
 }
 
 // Only necessary if you want consistency between social network responses.
