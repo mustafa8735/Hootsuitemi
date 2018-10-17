@@ -42,6 +42,7 @@ function CreateIssue() {
         data: request,
         success: function (response) {
             $(".alert-message-loading").css({ "display": "none" });
+            $(".alert-message-success").css({ "display": "block" });
             var issuNumber = $("#issueNumber"); 
             issuNumber.text(response);
             issuNumber.attr("href", "https://testdrd.mi4biz.com/Issuer/IssueDetail.aspx?IssueID=" + response);
