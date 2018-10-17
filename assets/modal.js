@@ -33,8 +33,6 @@ function CreateIssue() {
                     } \
                 }';
 
-    console.log(request);
-
     $.ajax({
         type: "POST",
         headers: header,
@@ -43,7 +41,7 @@ function CreateIssue() {
         dataType: "json",
         data: request,
         success: function (response) {
-
+            $("#issueNumber").text(response)
             console.log("Success: " + response);
         },
         error: function (e) {
