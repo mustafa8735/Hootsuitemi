@@ -4,11 +4,11 @@
 * this is mostly just to show an example of the things you can
 * do with the Hootsuite SDK.
 */
-'use strict';
+'use strict'; 
 
-function showMessage(){
-	
-	alert("234234");
+function CreateIssue() {
+
+    alert("234234");
 }
 
 function populateMessage(data) {
