@@ -8,7 +8,7 @@ function sendToAppHandler(data) {
       'GET',
       window.location.origin + '/tweets/' + data.post.id
     );
-      httpRequest.setRequestHeader('secretKey', '123123')
+    httpRequest.setRequestHeader('secretKey', 'super_secret')
     httpRequest.send();
     httpRequest.onreadystatechange = function() {
       var response = httpRequest.responseText;

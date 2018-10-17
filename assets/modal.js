@@ -201,9 +201,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var data = JSON.parse(window.localStorage.jsonData);
     //currently handling displaying http errors this way but it can be improved on
 
-    console.log("DATA: " + data);
+    console.log("DATA: " + data.post.content.body);
 
-    CreateIssue("hede");
+    CreateIssue(data.post.content.body);
 
     if ("error" in data) {
         getSingleElementByClassName('error').style.display = 'block';
