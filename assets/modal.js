@@ -41,6 +41,7 @@ function CreateIssue() {
         dataType: "json",
         data: request,
         success: function (response) {
+            $(".alert-message-loading").css({ "display": "none" });
             var issuNumber = $("#issueNumber"); 
             issuNumber.text(response);
             issuNumber.attr("href", "https://testdrd.mi4biz.com/Issuer/IssueDetail.aspx?IssueID=" + response);
@@ -48,8 +49,8 @@ function CreateIssue() {
             console.log("Success: " + response);
         },
         error: function (e) {
+            $(".alert-message-loading, .alert-message-success").css({ "display": "none" });
             $(".alert-message-danger").css({ "display": "block" });
-            $(".alert-message-success").css({ "display": "none" });
 
             console.log("Status: " + e.status);
             console.log("Error: " + e.statusText);
