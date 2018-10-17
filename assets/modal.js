@@ -6,7 +6,9 @@
 */
 'use strict';
 
-function CreateIssue() {
+function CreateIssue(message) {
+
+    console.log("Message: " + message);
 
     var url = "https://testapirack.mi4biz.com/services/IssueService/478/Issue.json/1";
     var header = { 'Content-Type': 'application/json', 'authorization': 'Basic YWRtaW5AZHJkLmNvbTE6MTIzNDU2QWEt', 'accept': 'application/json' };
@@ -21,7 +23,7 @@ function CreateIssue() {
                     "Customer": { \
                         "CustomerID": "1094076" \
                     }, \
-                    "IssueDescription": "hoot suite test bildirim 61", \
+                    "IssueDescription": "'+ message + '", \
                         "IssueType": { \
                         "IssueTypeID": "1181" \
                     }, \
@@ -42,12 +44,11 @@ function CreateIssue() {
         data: request,
         success: function (response) {
             $(".alert-message-loading").css({ "display": "none" });
-            
-            var issuNumber = $("#issueNumber"); 
+
+            var issuNumber = $("#issueNumber");
             issuNumber.text(response);
             issuNumber.attr("href", "https://testdrd.mi4biz.com/Issuer/IssueDetail.aspx?IssueID=" + response);
             $(".alert-message-success").css({ "display": "block" });
-            console.log("Success: " + response);
         },
         error: function (e) {
             $(".alert-message-loading, .alert-message-success").css({ "display": "none" });
