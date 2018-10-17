@@ -1,6 +1,5 @@
-'use strict';
+﻿'use strict';
 function sendToAppHandler(data) {
-    console.log(data);
 
   if (data.post.network === 'TWITTER') {
     var httpRequest = new XMLHttpRequest();
@@ -23,7 +22,7 @@ function sendToAppHandler(data) {
     window.localStorage.jsonData = JSON.stringify(data);
   }
   // open a custom modal, where the data will be read and displayed on the dashboard
-  hsp.showCustomPopup(window.location.origin + '/modal', 'Post Info');
+  hsp.showCustomPopup(window.location.origin + '/modal', 'Mi4Biz Bildirim Oluşturma');
 }
 
 // Only necessary if you want consistency between social network responses.

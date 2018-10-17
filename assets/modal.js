@@ -8,9 +8,8 @@
 
 function CreateIssue(message) {
 
-    console.log("Message: " + message);
-
     var url = "https://testapirack.mi4biz.com/services/IssueService/478/Issue.json/1";
+
     var header = { 'Content-Type': 'application/json', 'authorization': 'Basic YWRtaW5AZHJkLmNvbTE6MTIzNDU2QWEt', 'accept': 'application/json' };
 
     var request = '{ \
@@ -199,12 +198,10 @@ function startEventListeners() {
 document.addEventListener('DOMContentLoaded', function () {
 
     var data = JSON.parse(window.localStorage.jsonData);
-    //currently handling displaying http errors this way but it can be improved on
-
-    console.log("DATA: " + data.post.content.body);
 
     CreateIssue(data.post.content.body);
 
+    //currently handling displaying http errors this way but it can be improved on
     if ("error" in data) {
         getSingleElementByClassName('error').style.display = 'block';
     }
