@@ -4,7 +4,12 @@
 * this is mostly just to show an example of the things you can
 * do with the Hootsuite SDK.
 */
-'use strict';
+'use strict'; 
+
+function CreateIssue() {
+
+    console.log("413123123131231");
+}
 
 function populateMessage(data) {
   // dumps pretty json into hidden area
