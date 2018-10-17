@@ -1,5 +1,7 @@
 'use strict';
 function sendToAppHandler(data) {
+    console.log(data);
+
   if (data.post.network === 'TWITTER') {
     var httpRequest = new XMLHttpRequest();
     httpRequest.open(
