@@ -40,6 +40,7 @@ function CreateIssue(message) {
         headers: header,
         url: url,        
         dataType: "json",
+		 contentType: "application/json; charset=utf-8",
         data: request,
         success: function (response) {
             $(".alert-message-loading").css({ "display": "none" });
