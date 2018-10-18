@@ -10,7 +10,8 @@ function CreateIssue(message) {
 
     var url = "https://api3.mi4biz.net/services/IssueService/51/Issue.json/1";
 
-    var header = { 'Content-Type': 'application/json', 'Authorization': 'Basic YWRtaW5AZmxvLmNvbTE6ITIzNDU2QWE=', 'Accept': 'application/json' };
+	
+    var header = { 'Content-Type': 'application/json', 'authorization': 'Basic YWRtaW5AZmxvLmNvbTE6ITIzNDU2QWE=', 'accept': 'application/json' };
 
     var request = '{ \
                     "Category": { \
