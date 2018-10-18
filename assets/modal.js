@@ -8,27 +8,27 @@
 
 function CreateIssue(message) {
 
-    var url = "https://testapirack.mi4biz.com/services/IssueService/478/Issue.json/1";
+    var url = "https://api3.mi4biz.net/services/IssueService/51/Issue.json/1";
 
-    var header = { 'Content-Type': 'application/json', 'authorization': 'Basic YWRtaW5AZHJkLmNvbTE6MTIzNDU2QWEt', 'accept': 'application/json' };
+    var header = { 'Content-Type': 'application/json', 'authorization': 'Basic YWRtaW5AZmxvLmNvbTE6ITIzNDU2QWE=', 'accept': 'application/json' };
 
     var request = '{ \
                     "Category": { \
-                        "CategoryID": "19039" \
+                        "CategoryID": "961" \
                     }, \
                     "ContactMethod": { \
-                        "ContactMethodID": "6887" \
+                        "ContactMethodID": "447" \
                     }, \
                     "Customer": { \
-                        "CustomerID": "1094076" \
+                        "CustomerID": "2941053" \
                     }, \
                     "IssueDescription": "'+ message + '", \
                         "IssueType": { \
-                        "IssueTypeID": "1181" \
+                        "IssueTypeID": "118" \
                     }, \
                     "PreferredReturnMethods": { \
                         "ContactMethod": { \
-                            "ContactMethodID": "6887", \
+                            "ContactMethodID": "447", \
                                 "MailConfigurationID": "0" \
                         } \
                     } \
@@ -46,7 +46,7 @@ function CreateIssue(message) {
 
             var issuNumber = $("#issueNumber");
             issuNumber.text(response);
-            issuNumber.attr("href", "https://testdrd.mi4biz.com/Issuer/IssueDetail.aspx?IssueID=" + response);
+            issuNumber.attr("href", "https://flo.mi4biz.net/Issuer/IssueDetail.aspx?IssueID=" + response);
             $(".alert-message-success").css({ "display": "block" });
         },
         error: function (e) {
