@@ -31,7 +31,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/26/2018 15:25:31</publishTime>
     </File>
     <File Include="assets/js/modal.js">
-      <publishTime>11/26/2018 15:23:01</publishTime>
+      <publishTime>11/27/2018 17:48:03</publishTime>
     </File>
     <File Include="assets/js/plugin.js">
       <publishTime>11/26/2018 15:28:24</publishTime>
@@ -49,10 +49,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/26/2018 14:51:26</publishTime>
     </File>
     <File Include="bin/Formalis.MI4Biz.HootSuite.dll">
-      <publishTime>11/26/2018 17:27:54</publishTime>
+      <publishTime>11/27/2018 17:48:54</publishTime>
     </File>
     <File Include="bin/Formalis.MI4Biz.HootSuite.pdb">
-      <publishTime>11/26/2018 17:27:54</publishTime>
+      <publishTime>11/27/2018 17:48:54</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>06/27/2017 22:59:34</publishTime>
@@ -327,8 +327,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/index/index.cshtml">
       <publishTime>11/26/2018 15:02:35</publishTime>
     </File>
+    <File Include="Views/modal/Index.cshtml">
+      <publishTime>11/27/2018 16:29:41</publishTime>
+    </File>
     <File Include="Views/modal/modal.cshtml">
       <publishTime>11/26/2018 15:27:01</publishTime>
+    </File>
+    <File Include="Views/plugin/Index.cshtml">
+      <publishTime>11/27/2018 16:30:46</publishTime>
     </File>
     <File Include="Views/plugin/plugin.cshtml">
       <publishTime>11/26/2018 15:28:58</publishTime>
@@ -337,7 +343,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/26/2018 14:50:59</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/26/2018 17:27:55</publishTime>
+      <publishTime>11/27/2018 15:59:10</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -16,7 +16,7 @@ namespace Formalis.MI4Biz.HootSuite
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "index", action = "index", id = UrlParameter.Optional }
+                defaults: new { controller = "Plugin", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

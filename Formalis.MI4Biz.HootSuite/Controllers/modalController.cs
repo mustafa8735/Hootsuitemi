@@ -6,10 +6,9 @@ using System.Web.Mvc;
 
 namespace Formalis.MI4Biz.HootSuite.Controllers
 {
-    public class modalController : Controller
+    public class ModalController : Controller
     {
-        // GET: modal
-        public ActionResult modal()
+        public ActionResult Index()
         {
             return View();
         }

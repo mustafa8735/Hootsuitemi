@@ -6,10 +6,9 @@ using System.Web.Mvc;
 
 namespace Formalis.MI4Biz.HootSuite.Controllers
 {
-    public class pluginController : Controller
+    public class PluginController : Controller
     {
-        // GET: plugin
-        public ActionResult plugin()
+        public ActionResult Index()
         {
             return View();
         }

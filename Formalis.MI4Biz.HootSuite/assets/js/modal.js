@@ -8,7 +8,7 @@
 
 function CreateIssue(message) {
 
-    var url = "https://api3.mi4biz.net/services/IssueService/51/Issue.json/1";
+    var url = "https://testapi1.mi4biz.net/services/IssueService/51/Issue.json/1";
 
 	
     var header = { 'Content-Type': 'application/json; charset=utf-8', 'authorization': 'Basic YWRtaW5AZmxvLmNvbTE6ITIzNDU2QWE=', 'accept': 'application/json' };
